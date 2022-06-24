@@ -25,7 +25,7 @@
             @foreach ($shopMenu as $shopMenuItem)
                 <li>
                     <img src="{{$shopMenuItem["src"]}}" alt="{{$shopMenuItem["name"]}}">
-                    <a href="{{$shopMenuItem["href"]}}">{{$shopMenuItem["name"]}}</a>
+                    <a href="{{$shopMenuItem["href"]}}">{{strtoupper($shopMenuItem["name"])}}</a>
                 </li>
             @endforeach
             {{-- <li v-for="(item, index) in menu" :key="`menu-${index}`">
