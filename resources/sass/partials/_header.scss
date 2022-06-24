@@ -1,0 +1,30 @@
+@import "./vars";
+header{
+  height: 118px;
+  font-size: 14px;
+  .container{
+    justify-content: space-between;
+  }
+  .logo{
+    width: 80px;
+  }
+  ul{
+    display: flex;
+    height: 100%;
+    a{
+      display: inline-flex;
+      align-items: center;
+      height: 100%;
+      color: rgb(70, 70, 70);
+      text-decoration: none;
+      margin: 0 16px;
+      border-bottom: 6px solid transparent;
+      font-weight: 500;
+      &:hover,
+      &.active{
+        border-bottom: 6px solid $main-color;
+        color: $main-color;
+      }
+    }
+  }
+}
